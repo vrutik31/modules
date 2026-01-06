@@ -3,9 +3,9 @@ import Sidebar from "./pages/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import Bed from "./pages/Bed";
 import Banners from "./pages/Banners";
-import Councellers from "./pages/councellers";
 import Testimonials from "./pages/Testimonials";
 import Courses from "./pages/Courses";
+import Counseler from "./pages/Counseler";
 
 export default function App() {
   return (
@@ -17,7 +17,7 @@ export default function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/bed" element={<Bed />} />
           <Route path="/banners" element={<Banners />} />
-          <Route path="/councellers" element={<Councellers />} />
+          <Route path="/counseler" element={<Counseler />} />
           <Route path="/testimonials" element={<Testimonials />} />
                     <Route path="/course" element={<Courses />} />
 

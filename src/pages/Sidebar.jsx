@@ -18,7 +18,7 @@ export default function Sidebar() {
           <NavLink to="/banners">Banner</NavLink>
         </li>
         <li>
-          <NavLink to="/councellers">Councellers</NavLink>
+          <NavLink to="/counseler">Councellers</NavLink>
         </li>
         <li>
           <NavLink to="/testimonials">Testimonials</NavLink>

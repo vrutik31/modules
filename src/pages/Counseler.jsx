@@ -10,7 +10,7 @@ import { getCounsellors, createCounsellor, updateCounsellor, deleteCounsellor } 
 import { useForm } from "react-hook-form";
 
 
-export default function Councellers() {
+export default function Counseler() {
     //state
     const [list, setList] = useState([]);
     const [editId, setEditId] = useState(null);
