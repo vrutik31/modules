@@ -1,0 +1,121 @@
+/* 🌟 Page background aesthetic blobs */
+.hp-page {
+  position: relative;
+  min-height: 100%;
+}
+
+.hp-page-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hp-blob {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(35px);
+  opacity: 0.65;
+}
+
+/* Floating animation */
+.hp-animate-float {
+  animation: hpFloat 7s ease-in-out infinite;
+}
+
+@keyframes hpFloat {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-18px) scale(1.03); }
+}
+
+/* Pop-in animation */
+.hp-animate-pop {
+  animation: hpPop 0.35s cubic-bezier(.2,.7,.3,1) both;
+}
+
+@keyframes hpPop {
+  0% { opacity: 0; transform: scale(.95) translateY(6px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* 🌟 Glow button */
+.hp-glow-btn {
+  border-radius: 14px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: all .22s ease;
+}
+
+.hp-glow-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 48px rgba(99,102,241,.35);
+}
+
+/* 🔘 Action buttons */
+.hp-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 12px;
+  font-size: 12px;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  transition: all .2s ease;
+}
+
+.hp-action-neutral {
+  background: #f5f7fb;
+  border-color: #e5e7f2;
+  color: #374151;
+}
+
+.hp-action-edit {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+  color: #4338ca;
+}
+
+.hp-action-danger {
+  background: #fee2e2;
+  border-color: #fecaca;
+  color: #991b1b;
+}
+
+.hp-action-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(0,0,0,.08);
+}
+
+/* 🧾 Table Wrapper */
+.hp-table-wrap {
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  box-shadow: 0 14px 40px rgba(0,0,0,.06);
+  overflow: hidden;
+}
+
+.hp-table-wrap table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* Mobile cards spacing fix */
+.hp-card {
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+/* Status badge animation look */
+.bg-green-100,
+.bg-red-100 {
+  transition: background .25s ease, color .25s ease;
+}
+
+/* Smooth disabled button opacity */
+button:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
